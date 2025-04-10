@@ -9,8 +9,7 @@ Hint: Use string slicing or a loop.
 text="programming"
 reversed_text=text[::-1]
 print(Reversed string(slicing):'"reversed_text)
-Reply to the email directly,view it on GitHub,or unsubscribe,
-you are receiving this because you commented
+
 
 
 """
@@ -22,10 +21,8 @@ name_parts=full_name,split()
 initials=[name[0],upper()+";for name in name_part]
           print("",join(initial))
 
-        _
-          Reply to this email directly,View it on 
-          GitHub,or unsubscribe.
-You are receiving this because you commented
+        
+
 
 
 """
@@ -38,10 +35,8 @@ if text==text[::-1]:
   print(f"{text}'is not a palindrome.")
   else
   print(f"'{text}'is not a palindrome.")
-  _
-  Reply to this email directly,view itt on
-  GitHub,or unsubscrib.
-  you are receiving this because you commented.
+  
+
 
 """
 4.Create a Python program that asks the user to enter a sentence and counts the number of words in the sentence.
@@ -60,10 +55,7 @@ is an example." Print the modified string.
 text="this is a string and it is an example."
 modified_text=text.replace("is","was",)
 print ("modified string :",modified_text)
-_
-Reply to this email directly,View it on
-GitHub,or unsubscribe.
-you are receiving this because you commented
+
 
 
 
