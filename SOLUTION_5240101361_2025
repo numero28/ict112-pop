@@ -1,0 +1,77 @@
+#QUESTION 1
+# Original string
+original_string = "Programming"
+
+# Reversing the string using slicing
+reversed_string = original_string[::-1]
+
+# Printing the reversed string
+print(reversed_string)
+
+
+#QUESTION 2
+# Function to get initials from a full name
+def get_initials(full_name):
+    # Split the full name into parts
+    name_parts = full_name.split()
+    # Extract the first letter of each part and convert to uppercase
+    initials = [part[0].upper() for part in name_parts]
+    # Join the initials with a dot and add a dot at the end
+    return '.'.join(initials) + '.'
+
+# Taking user input
+user_input = input("Enter your full name: ")
+# Getting the initials
+initials = get_initials(user_input)
+# Printing the initials
+print(initials)
+
+
+#QUESTION 3
+# Function to check if a string is a palindrome
+def is_palindrome(s):
+    # Remove spaces and convert to lowercase for a case-insensitive comparison
+    cleaned_string = s.replace(" ", "").lower()
+    # Check if the cleaned string is the same as its reverse
+    return cleaned_string == cleaned_string[::-1]
+
+# Taking user input
+user_input = input("Enter a string: ")
+
+# Checking if the input string is a palindrome
+if is_palindrome(user_input):
+    print(f'"{user_input}" is a palindrome.')
+else:
+    print(f'"{user_input}" is not a palindrome.')
+
+
+#QUESTION 4
+    # Function to count words in a sentence
+def count_words(sentence):
+    # Split the sentence into words
+    words = sentence.split()
+    # Return the number of words
+    return len(words)
+
+# Main program
+if __name__ == "__main__":
+    # Ask the user to enter a sentence
+    user_input = input("Please enter a sentence: ")
+    # Count the words in the sentence
+    word_count = count_words(user_input)
+    # Display the result
+    print(f"The number of words in the sentence is: {word_count}")
+
+
+#QUESTION 5
+    # Original string
+original_string = "This is a string and it is an example."
+
+# Replace all occurrences of "is" with "was"
+modified_string = original_string.replace("is", "was")
+
+# Print the modified string
+print("Modified string:", modified_string)
+
+
+    
