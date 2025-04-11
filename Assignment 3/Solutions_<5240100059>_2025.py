@@ -11,22 +11,20 @@ text = "Programming"
 reversed_text = text[::-1]
 print("Reversed string:", reversed_text)
 
-
 """
 2.Create a Python program that takes a user’s full name as input and prints the initials in uppercase.
 Example: Input: "john doe", Output: "J.D."
 """
-
 full_name = input("Enter your full name: ")
 name_parts = full_name.split()
 initials = ".".join([name[0].upper() for name in name_parts]) + "."
 print("Initials:", initials)
-
-
 """
+
 3.Write a Python program to check if a given string is a palindrome. A palindrome reads the same forwards
 and backward (e.g., "radar", "level"). Hint: Compare the string with its reverse.
 """
+
 text = input("Enter a string: ")
 cleaned_text = text.lower()
 if cleaned_text == cleaned_text[::-1]:
