@@ -27,7 +27,17 @@ and backward (e.g., "radar", "level"). Hint: Compare the string with its reverse
 4.Create a Python program that asks the user to enter a sentence and counts the number of words in the sentence.
 Hint: Use the split() method to break the string into words.
 """
+# Ask the user to enter a sentence
+sentence = input("Enter a sentence: ")
 
+# Split the sentence into words using split()
+words = sentence.split()
+
+# Count the number of words
+word_count = len(words)
+
+# Display the result
+print("Number of words in the sentence:", word_count)
 
 
 """
