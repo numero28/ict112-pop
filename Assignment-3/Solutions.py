@@ -21,16 +21,18 @@ Example: Input: "john doe", Output: "J.D."
 and backward (e.g., "radar", "level"). Hint: Compare the string with its reverse.
 """
 
-
-
 """
 4.Create a Python program that asks the user to enter a sentence and counts the number of words in the sentence.
 Hint: Use the split() method to break the string into words.
 """
 
 
-
 """
 5.Write a Python program to replace all occurrences of "is" with "was" in the string "This is a string and it
 is an example." Print the modified string.
 """
+
+
+
+
+
