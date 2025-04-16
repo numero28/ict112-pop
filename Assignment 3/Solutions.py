@@ -8,11 +8,24 @@ Hint: Use string slicing or a loop.
 """
 
 
+# 1. Reverse the string "Programming"
+original = "Programming"
+reversed_string = original[::-1]
+print("1. Reversed string:", reversed_string)
+
+
+
 
 """
 2.Create a Python program that takes a user’s full name as input and prints the initials in uppercase.
 Example: Input: "john doe", Output: "J.D."
 """
+ f
+Print initials in uppercase
+full_name = input("2. Enter your full name: ").strip()
+name_parts = full_name.split()
+initials = ".".join([name[0].upper() for name in name_parts]) + "."
+print("Initials:", initials)
 
 
 
@@ -21,6 +34,13 @@ Example: Input: "john doe", Output: "J.D."
 and backward (e.g., "radar", "level"). Hint: Compare the string with its reverse.
 """
 
+# 3. Check if a string is a palindrome
+text = input("3. Enter a word to check if it's a palindrome: ").lower()
+if text == text[::-1]:
+    print("It is a palindrome.")
+else:
+    print("It is not a palindrome.")
+
 
 
 """
@@ -28,9 +48,22 @@ and backward (e.g., "radar", "level"). Hint: Compare the string with its reverse
 Hint: Use the split() method to break the string into words.
 """
 
+Count number of words in a sentence
+sentence = input("4. Enter a sentence: ")
+words = sentence.split()
+print("Number of words:", len(words))
+
+
 
 
 """
 5.Write a Python program to replace all occurrences of "is" with "was" in the string "This is a string and it
 is an example." Print the modified string.
 """
+
+
+Replace all occurrences of "is" with "was"
+original_text = "This is a string and it is an example."
+modified_text = original_text.replace("is", "was")
+print("5. Modified string:", modified_text)
+
