@@ -56,5 +56,5 @@ is an example." Print the modified string.
   #ans
 sentence="this is a string and it is an example"
 chan=sentence.replace("is","was")
-print(chan)
+print(chan).
 
