@@ -6,7 +6,7 @@ Solutions to assignment 3
 1.Write a Python program to reverse the string "Programming". Print the reversed string.
 Hint: Use string slicing or a loop.
 """
-reverse the string "Programming"
+reverse_string "Programming"
 original = "Programming"
 reversed_string = original[::-1]
 print("1. Reversed string:", reversed_string)
