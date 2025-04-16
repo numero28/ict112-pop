@@ -43,7 +43,7 @@ else:
     print("It's not a palindrome")
 
 
-"""
+""""
 4.Create a Python program that asks the user to enter a sentence and counts the number of words in the sentence.
 Hint: Use the split() method to break the string into words.
 """
