@@ -29,7 +29,7 @@ initialName = ""
 for firstLetter in groupName:
     initialName = initialName + firstLetter[0].upper() + "."
 print(initialName)
-"""
+""""
 3.Write a Python program to check if a given string is a palindrome. A palindrome reads the same forwards
 and backward (e.g., "radar", "level"). Hint: Compare the string with its reverse.
 """
