@@ -1,0 +1,122 @@
+"""
+Solutions to assignment 3
+"""
+
+"""
+1.Write a Python program to reverse the string "Programming". Print the reversed string.
+Hint: Use string slicing or a loop.
+"""
+
+original_string = "Programming"
+reversed_string_loop = ""
+for char in original_string:
+    reversed_string_loop = char + reversed_string_loop
+print(f"Reversed string (using loop): {reversed_string_loop}")
+
+
+"""
+2.Create a Python program that takes a user’s full name as input and prints the initials in uppercase.
+Example: Input: "john doe", Output: "J.D."
+"""
+
+def print_initials(full_name):
+  """
+  Takes a user's full name as input and prints the initials in uppercase.
+
+  Args:
+    full_name: A string representing the user's full name.
+  """
+  name_parts = full_name.split()
+  initials = ""
+  for part in name_parts:
+    if part:  # Ensure the part is not an empty string
+      initials += part[0].upper() + "."
+  print(initials)
+
+# Get input from the user
+user_name = input("Enter your full name: ")
+
+# Print the initials
+print_initials(user_name)
+
+"""
+3.Write a Python program to check if a given string is a palindrome. A palindrome reads the same forwards
+and backward (e.g., "radar", "level"). Hint: Compare the string with its reverse.
+"""
+
+def is_palindrome(text):
+    """
+    Checks if a given string is a palindrome.
+
+    Args:
+        text: The string to check.
+
+    Returns:
+        True if the string is a palindrome, False otherwise.
+    """
+    # Remove spaces and convert to lowercase for case-insensitive comparison
+    processed_text = "".join(text.split()).lower()
+    reversed_text = processed_text[::-1]  # Reverse the string
+    return processed_text == reversed_text
+
+# Get input from the user
+input_string = input("Enter a string: ")
+
+# Check if it's a palindrome and print the result
+if is_palindrome(input_string):
+    print(f"'{input_string}' is a palindrome.")
+else:
+    print(f"'{input_string}' is not a palindrome.")
+
+
+"""
+4.Create a Python program that asks the user to enter a sentence and counts the number of words in the sentence.
+Hint: Use the split() method to break the string into words.
+"""
+
+def count_words(sentence):
+    """
+    Counts the number of words in a given sentence.
+
+    Args:
+        sentence: The sentence string.
+
+    Returns:
+        The number of words in the sentence.
+    """
+    words = sentence.split()  # Split the sentence into a list of words
+    return len(words)  # Return the number of words in the list
+
+# Get input from the user
+user_sentence = input("Enter a sentence: ")
+
+# Count the words and print the result
+word_count = count_words(user_sentence)
+print(f"The sentence contains {word_count} words.")
+
+
+"""
+5.Write a Python program to replace all occurrences of "is" with "was" in the string "This is a string and it
+is an example." Print the modified string.
+"""
+def replace_is_with_was(input_string):
+    """
+    Replaces all occurrences of "is" with "was" in a given string.
+
+    Args:
+        input_string: The input string.
+
+    Returns:
+        The modified string with "is" replaced by "was".
+    """
+    modified_string = input_string.replace("is", "was")
+    return modified_string
+
+# The original string
+original_string = "This is a string and it is an example."
+
+# Replace "is" with "was"
+modified_string = replace_is_with_was(original_string)
+
+# Print the modified string
+print(modified_string)
