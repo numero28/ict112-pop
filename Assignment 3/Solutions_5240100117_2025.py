@@ -1,42 +1,57 @@
-#Functions
 """
-A function to add two numbers
-"""
-#defining the function
-def add_numbers(a, b):
-    return a + b
-
-#Calling the function
-number1 = 3
-number2 = 5
-result = add_numbers(number1, number2)
-print(f"Sum: {result}")
-
-
-"""
-A function to compute the bmi of a person
+Solutions to assignment 3
 """
 
-#defining the function
-def bmi(weight, height):
-    return weight / height ** 2
-
-#Calling the function
-weight = 90
-height = 1.69
-result = bmi(weight, height)
-print(f"BMI: {result}")
-        
 """
-A function to compute area of a circle
+1.Write a Python program to reverse the string "Programming". Print the reversed string.
+Hint: Use string slicing or a loop.
+"""
+#Printing a reversed string
+string_to_reverse = "Programming"
+reversed_string = string_to_reverse[::-1]
+print("reversed_string:", reversed_string)
 """
 
-#defining the function
-def area(radius):
-    PI = 3.14159
-    return radius ** 2 * PI
+2.Create a Python program that takes a user’s full name as input and prints the initials in uppercase.
+Example: Input: "john doe", Output: "J.D."
+"""
+#Printing the initials of full names in uppercase
+full_name = input("Enter your full name: ")
+initials = '.'.join(part[0].upper() for part in full_name.split())
+print(f"{initials}.")
 
-#Calling the function
-radius = 1.69
-result = area(radius)
-print(f"Area: {result:.2f}")
+"""
+3.Write a Python program to check if a given string is a palindrome. A palindrome reads the same forwards
+and backward (e.g., "radar", "level"). Hint: Compare the string with its reverse.
+"""
+#get user input
+text = input("enter text: ")
+
+#convert text to lower case
+text_lower = text.lower()
+
+#check if the string is equal to its reverse
+if text_lower == text_lower[::-1]:
+    print("It is a palindrome.")
+else:
+    print("It is not a palindrome.")
+"""
+4.Create a Python program that asks the user to enter a sentence and counts the number of words in the sentence.
+Hint: Use the split() method to break the string into words.
+"""
+#Python program that counts number of words in a sentence
+sentence = input("Enter a sentence: ")
+word_count = len(sentence.split() )
+print(f"Number of words: {word_count}")
+
+"""
+5.Write a Python program to replace all occurrences of "is" with "was" in the string "This is a string and it
+is an example." Print the modified string.
+"""
+text = "This is a string and it is an example."
+
+#replace 'is' with 'was'
+modified_text = text.replace("is", "was")
+
+#print the modified string
+print("Modified string:", modified_text)
