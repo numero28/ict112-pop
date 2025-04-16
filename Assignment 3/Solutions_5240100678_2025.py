@@ -7,7 +7,7 @@ Solutions to assignment 3
 Hint: Use string slicing or a loop.
 """
 # Original string
-text = "Programming"
+text = "coding"
 
 # Reverse the string using slicing
 reversed_text = text[::-1]
