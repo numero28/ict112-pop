@@ -56,7 +56,7 @@ wordSplit = len(sentenceSplit)
 print("The number of words in the sentence is ", wordSplit)
 
 
-"""
+""""
 5.Write a Python program to replace all occurrences of "is" with "was" in the string "This is a string and it
 is an example." Print the modified string.
 """
