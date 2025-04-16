@@ -1,38 +1,36 @@
+"""
+Solutions to assignment 3
+"""
 
-# 1. Reverse the string "Programming"
-word = "Programming"
-reversed_word = word[::-1]  # Using string slicing to reverse
-print("Reversed string:", reversed_word)
-```
+"""
+1.Write a Python program to reverse the string "Programming". Print the reversed string.
+Hint: Use string slicing or a loop.
+"""
 
-```python
-# 2. Get initials in uppercase from user's full name
-full_name = input("Enter your full name: ")  # Example input: "john doe"
-names = full_name.strip().split()  # Split the name into parts
-initials = ".".join([name[0].upper() for name in names]) + "."
-print("Initials:", initials)
-```
 
-```python
-# 3. Check if a string is a palindrome
-text = input("Enter a word to check if it's a palindrome: ")  # Example: "radar"
-if text == text[::-1]:  # Compare with its reverse
-    print("Yes, it's a palindrome.")
-else:
-    print("No, it's not a palindrome.")
-```
 
-```python
-# 4. Count the number of words in a sentence
-sentence = input("Enter a sentence: ")  # Example: "This is a test sentence."
-words = sentence.strip().split()  # Split sentence into words
-print("Number of words:", len(words))
-```
+"""
+2.Create a Python program that takes a user’s full name as input and prints the initials in uppercase.
+Example: Input: "john doe", Output: "J.D."
+"""
 
-```python
-# 5. Replace all "is" with "was" in a given string
-text = "This is a string and it is an example."
-modified_text = text.replace("is", "was")
-print("Modified string:", modified_text)
-```
 
+
+"""
+3.Write a Python program to check if a given string is a palindrome. A palindrome reads the same forwards
+and backward (e.g., "radar", "level"). Hint: Compare the string with its reverse.
+"""
+
+
+
+"""
+4.Create a Python program that asks the user to enter a sentence and counts the number of words in the sentence.
+Hint: Use the split() method to break the string into words.
+"""
+
+
+
+"""
+5.Write a Python program to replace all occurrences of "is" with "was" in the string "This is a string and it
+is an example." Print the modified string.
+"""
