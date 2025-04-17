@@ -47,7 +47,6 @@ user_input = input("Enter a sentence: ")
 word_count = count_words(user_input)
 print(f"The sentence contains {word_count} words.")
 
-
 """
 5.Write a Python program to replace all occurrences of "is" with "was" in the string "This is a string and it
 is an example." Print the modified string.
