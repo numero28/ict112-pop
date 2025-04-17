@@ -77,4 +77,3 @@ modified_text = text.replace("is", "was")
 
 # Print the modified string
 print("modified_string:", modified_text)
-
