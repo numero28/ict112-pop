@@ -8,16 +8,17 @@ Hint: Use string slicing or a loop.
 """
 text="programming"
 reversed text=text[::-1]
+print("Reversed string(slicing):",reversed text)
 
 """
 2.Create a Python program that takes a user’s full name as input and prints the initials in uppercase.
 Example: Input: "john doe", Output: "J.D."
 """
-
+full_name=input("enter your full name :"  )
 name parts=full name.strip().split()
 initials=".".join([parts[o].upper() 
  for part in name parts])
-   print(initials + "."
+   print(initials + ".")
 """
 3.Write a Python program to check if a given string is a palindrome. A palindrome reads the same forwards
 and backward (e.g., "radar", "level"). Hint: Compare the string with its reverse.
