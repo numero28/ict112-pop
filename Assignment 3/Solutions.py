@@ -16,8 +16,6 @@ input_str = "Programming"
 reversed_str = reverse_string(input_str)
 print("Reversed String:", reversed_str)
 
-
-
 """
 2.Create a Python program that takes a user’s full name as input and prints the initials in uppercase.
 Example: Input: "john doe", Output: "J.D."
