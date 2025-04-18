@@ -18,7 +18,7 @@ full_name= input("Enter your full name:  ")
 name_part= full_name.split()
 initials= ""
 for part in name_part:
-initials += part[0].upper() + "."
+    initials += part[0].upper() + "."
 print(initials)
 
 """
