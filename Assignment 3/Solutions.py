@@ -1,5 +1,5 @@
 """
-Solutions to assignment 3
+solutions to assignment 3
 """
 
 """
