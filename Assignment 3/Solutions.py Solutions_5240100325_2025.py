@@ -6,13 +6,30 @@ Solutions to assignment 3
 1.Write a Python program to reverse the string "Programming". Print the reversed string.
 Hint: Use string slicing or a loop.
 """
+#for loop 
 
+mainword = "programming"
+theReverseword = ""
+
+for letters in mainword:
+    theReverseword = letters + theReverseword
+
+print(theReverseword)
 
 
 """
 2.Create a Python program that takes a user’s full name as input and prints the initials in uppercase.
 Example: Input: "john doe", Output: "J.D."
 """
+#join and split method
+
+fullname = input ("Enter your full name:")
+
+groupName = fullname.split()
+
+initialName = ".".join(firstLetter[0].upper()for firstLetter in groupName)
+
+print(initialName)
 
 
 
@@ -21,6 +38,14 @@ Example: Input: "john doe", Output: "J.D."
 and backward (e.g., "radar", "level"). Hint: Compare the string with its reverse.
 """
 
+word = input("Enter a word")
+reverseWord = word [::-1]
+if word == reverseWord:
+    print("it is a palindrome.")
+else:
+    print("its not a palindrome.")
+
+
 
 
 """
@@ -28,9 +53,22 @@ and backward (e.g., "radar", "level"). Hint: Compare the string with its reverse
 Hint: Use the split() method to break the string into words.
 """
 
+sentence = input("Enter a sentence")
+
+sentenceSplit = sentence.split()
+
+wordSplit = len(sentenceSplit)
+
+print(" The number of words in the sentence is", wordSplit)
 
 
 """
 5.Write a Python program to replace all occurrences of "is" with "was" in the string "This is a string and it
 is an example." Print the modified string.
 """
+
+sentence =  "This is a string and it is an example."
+
+replaceWord = sentence.replace("is","was")
+
+print("Modified String:", replaceWord)
