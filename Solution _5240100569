@@ -1,0 +1,51 @@
+
+
+## 1. Reverse a String
+```
+def reverse_string(s):
+    return s[::-1]
+
+
+```
+
+## 2. Extract Initials from Full Name
+```
+def extract_initials(full_name):
+    names = full_name.split()
+    initials = ".".join(name[0].upper() for name in names)
+    return initials + "."
+
+full_name = input("Enter your full name: ")
+initials = extract_initials(full_name)
+print("Initials:", initials)
+```
+
+## 3. Check if a String is a Palindrome
+```
+def is_palindrome(s):
+    s = s.lower()  # Convert to lowercase for case-insensitive comparison
+    return s == s[::-1]
+
+string = input("Enter a string: ")
+if is_palindrome(string):
+    print("The string is a palindrome.")
+else:
+    print("The string is not a palindrome.")
+```
+
+## 4. Count Words in a Sentence
+```
+def count_words(sentence):
+    words = sentence.split()
+    return len(words)
+
+sentence = input("Enter a sentence: ")
+word_count = count_words(sentence)
+print("Number of words:", word_count)
+```
+
+## 5. Replace "is" with "was" in a String
+```
+def replace_string(s):
+    return s.replace("is", "was")
+
