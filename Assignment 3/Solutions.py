@@ -34,3 +34,4 @@ Hint: Use the split() method to break the string into words.
 5.Write a Python program to replace all occurrences of "is" with "was" in the string "This is a string and it
 is an example." Print the modified string.
 """
+
