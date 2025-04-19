@@ -1,0 +1,32 @@
+This is my solution
+
+# Question 1
+text = "Programming"
+reversed_text = text[::-1]
+print("Reversed string:", reversed_text)
+
+
+# 2. Question 2
+full_name = input("Enter your full name: ")
+initials = ".".join([name[0].upper() for name in full_name.split()]) + "."
+print("Initials:", initials)
+
+
+# 3. Question 3
+word = input("Enter a word: ")
+if word == word[::-1]:
+    print("It's a palindrome!")
+else:
+    print("It's not a palindrome.")
+
+
+# 4. Question 4
+sentence = input("Enter a sentence: ")
+words = sentence.split()
+print("Number of words:", len(words))
+
+
+# 5. Question 5
+text = "This is a string and it is an example."
+modified_text = text.replace("is", "was")
+print("Modified string:", modified_text)
