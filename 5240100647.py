@@ -1,3 +1,5 @@
+# ict112-pop
+Introduction to programming in Python
 #   Question 1
 word="progrmming"
 
@@ -28,3 +30,4 @@ print(f"The words in the sentence is {sentence_count}")
 main_string="This is the string amd it is an example."
 modified_string=main_string.replace("is","was")
 print(f"The new string is:  {modified_string}")
+
