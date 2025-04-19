@@ -1,0 +1,41 @@
+Assignment 3
+
+Priscilla Appiah Gyamfua
+
+Index number: 5240101026
+
+Class: ITE K
+
+1. Reverse the string "Programming" and print it
+
+string_to_reverse = "Programming"
+reversed_string = string_to_reverse[::-1]
+print("Reversed string:", reversed_string)
+
+2. Take user's full name and print initials in uppercase
+
+full_name = input("Enter your full name ")
+initials = ''.join([name[0].upper() for name in full_name.split()]) + '.'
+print("Initials:", initials)
+
+3. Check if a given string is a palindrome
+
+input_string = input("Enter a string to check palindrome")
+normalized_str = input_string.lower()
+if normalized_str == normalized_str[::-1]:
+    print(f"{input_string} is a palindrome.")
+else:
+    print(f"{input_string} is not a palindrome.")
+
+4. Count the number of words in a user-entered sentence
+
+sentence = input("Enter a sentence.").strip()
+words = sentence.split()
+word_count = len(words)
+print("Number of words in the sentence:", word_count)
+
+5. Replace all occurrences of "is" with "was" in the given string
+
+original_string = "This is a string and it is an example."
+modified_string = original_string.replace("is", "was")
+print("Modified string:", modified_string)
