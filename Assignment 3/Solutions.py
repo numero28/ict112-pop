@@ -46,4 +46,3 @@ is an example." Print the modified string.
 text = "This is a string and it is an example. "
 modified_text = text.replace(" is", " was,")
 print("modified_string:", modified_text)
-
