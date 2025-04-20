@@ -1,4 +1,32 @@
-"""
+"```python
+# Problem 1 Solution
+string_to_reverse = "Programming"
+reversed_string = string_to_reverse[::-1]
+print("Reversed string:", reversed_string)
+
+# Problem 2 Solution
+full_name = input("Enter your full name: ")
+name_parts = full_name.split()
+initials = [part[0].upper() + '.' for part in name_parts]
+print("Initials:", ''.join(initials))
+
+# Problem 3 Solution
+user_input = input("Enter a string to check for palindrome: ")
+if user_input == user_input[::-1]:
+    print("It's a palindrome!")
+else:
+    print("Not a palindrome.")
+
+# Problem 4 Solution
+sentence = input("Enter a sentence: ")
+word_count = len(sentence.split())
+print("Number of words:", word_count)
+
+# Problem 5 Solution
+original_string = "This is a string and it is an example."
+modified_string = original_string.replace("is", "was")
+print("Modified string:", modified_string)
+```"
 Solutions to assignment 3
 """
 
