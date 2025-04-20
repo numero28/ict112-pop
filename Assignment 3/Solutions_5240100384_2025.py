@@ -36,13 +36,26 @@ print("Initials:", get_initials(full_name))
 3.Write a Python program to check if a given string is a palindrome. A palindrome reads the same forwards
 and backward (e.g., "radar", "level"). Hint: Compare the string with its reverse.
 """
+sentence = input("Enter a sentence: ")
 
+sentenceSplit = sentence.split()
+
+wordSplit = len(sentenceSplit)
+
+print("The number of words in the sentence is", wordSplit)
 
 
 """
 4.Create a Python program that asks the user to enter a sentence and counts the number of words in the sentence.
 Hint: Use the split() method to break the string into words.
 """
+sentence = input("Enter a sentence: ")
+
+words = sentence.split()
+
+word_count = len(words)
+
+print("Number of words:", word_count)
 
 
 
@@ -50,3 +63,8 @@ Hint: Use the split() method to break the string into words.
 5.Write a Python program to replace all occurrences of "is" with "was" in the string "This is a string and it
 is an example." Print the modified string.
 """
+text = "This is a string and it is an example."
+
+modified_text = text.replace("is", "was")
+
+print("Modified string:", modified_text)
