@@ -1,0 +1,29 @@
+
+# 1. Reverse the string "Programming"
+original_string = "Programming"
+reversed_string = original_string[::-1]
+print("Reversed string:", reversed_string)  # Output: gnimmargorP
+
+# 2. Print initials in uppercase
+full_name = input("Enter your full name: ")
+initials = ".".join([name[0].upper() for name in full_name.strip().split()]) + "."
+print("Initials:", initials)
+
+# 3. Check if a string is a palindrome
+string_to_check = input("Enter a string to check if it is a palindrome: ")
+cleaned_string = string_to_check.replace(" ", "").lower()  # Optional: ignore spaces and case
+if cleaned_string == cleaned_string[::-1]:
+    print("It is a palindrome.")
+else:
+    print("It is not a palindrome.")
+
+# 4. Count the number of words in a sentence
+sentence = input("Enter a sentence: ")
+words = sentence.split()
+word_count = len(words)
+print("Number of words:", word_count)
+
+# 5. Replace all occurrences of "is" with "was"
+original_text = "This is a string and it is an example."
+modified_text = original_text.replace("is", "was")
+print("Modified string:", modified_text)
