@@ -1,0 +1,114 @@
+"""
+Solutions to assignment 3
+"""
+
+"""
+1.Write a Python program to reverse the string "Programming". Print the reversed string.
+Hint: Use string slicing or a loop.
+"""
+
+def reverse_string(input_string):
+  """Reverses a given string using string slicing."""
+  reversed_string = input_string[::-1]
+  return reversed_string
+
+
+original_string = "Programming"
+
+
+reversed_string = reverse_string(original_string)
+
+
+print(reversed_string)
+
+
+def reverse_string_loop(input_string):
+  reversed_string = ""
+  for char in input_string:
+    reversed_string = char + reversed_string
+  return reversed_string
+
+reversed_string_loop_method = reverse_string_loop(original_string)
+print(reversed_string_loop_method)
+
+"""
+2.Create a Python program that takes a user’s full name as input and prints the initials in uppercase.
+Example: Input: "john doe", Output: "J.D."
+"""
+
+def get_initials(full_name):
+  """
+  Takes a user's full name as input and returns the initials in uppercase.
+
+  Args:
+    full_name: A string representing the user's full name.
+
+  Returns:
+    A string containing the uppercase initials of the name, separated by dots.
+  """
+  name_parts = full_name.split()
+  initials = ""
+  for part in name_parts:
+    if part:  
+      initials += part[0].upper() + "."
+  return initials.rstrip(".") 
+
+
+user_name = input("Enter your full name: ")
+
+
+name_initials = get_initials(user_name)
+
+
+print("Initials:", name_initials)
+
+"""
+3.Write a Python program to check if a given string is a palindrome. A palindrome reads the same forwards
+and backward (e.g., "radar", "level"). Hint: Compare the string with its reverse.
+"""
+
+Compare characters from both ends (more efficient for long strings)
+    # left = 0
+    # right = len(clean_text) - 1
+    # while left < right:
+    #     if clean_text[left] != clean_text[right]:
+    #         return False
+    #     left += 1
+    #     right -= 1
+    # return True
+
+# Get the string to check from the user
+string_to_check = input("Enter a string: ")
+
+# Check if it's a palindrome and print the result
+if is_palindrome(string_to_check):
+    print(f"'{string_to_check}' is a palindrome.")
+else:
+    print(f"'{string_to_check}' is not a palindrome.")
+
+"""
+4.Create a Python program that asks the user to enter a sentence and counts the number of words in the sentence.
+Hint: Use the split() method to break the string into words.
+"""
+def count_words(sentence):
+  
+  words = sentence.split()
+  return len(words)
+
+
+user_sentence = input("Enter a sentence: ")
+
+
+word_count = count_words(user_sentence)
+
+
+print("Number of words:", word_count)
+
+
+"""
+5.Write a Python program to replace all occurrences of "is" with "was" in the string "This is a string and it
+is an example." Print the modified string.
+"""
+original_string = "This is a string and it is an example."
+modified_string = original_string.replace("is", "was")
+print(modified_string)
