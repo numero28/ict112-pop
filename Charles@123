@@ -1,0 +1,25 @@
+original_string = "programming"
+reversed_string=original_string[::-1]
+print("Reversed string:",reversed_string)
+
+full_name=input("Enter your full name: ")
+name_parts=full_name.strip().split() 
+initials=" ".join([part[0].upper()
+for part in name_part])
+print("initials: ",initials)
+
+text=input("Enter a string: ")
+cleaned_text=text.replace("","").lower()
+if cleaned_text==cleaned_text[::-1]:
+   print("It is a palindrome.")
+else:
+print("It is not a palindrome.")
+
+sentence=input("Enter a sentence: ")
+words=sentence.split()
+words_count=len(words)
+print("Number of words:",words_count)
+
+text="This is a string and it is an example."
+modified_text=text.replace("is","was")
+print("Modified string:",modified_text)
