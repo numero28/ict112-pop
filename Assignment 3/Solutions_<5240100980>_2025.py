@@ -9,7 +9,7 @@ Hint: Use string slicing or a loop.
 
 text="Programming"
 reversed_text=text[::-1]
-print("Reversed string:reversed_text")
+print("Reversed string:",reversed_text)
 
 
 
@@ -22,7 +22,7 @@ full_name=input("Enter your full name:")
 name_parts=full_name.strip().split()
 initials=[name[0].upper() for name in name_parts]
 initials_output=".".join(initials)  + "."
-print("Initials:initials_output")
+print("Initials:",initials_output)
 
 
 """
@@ -46,7 +46,7 @@ Hint: Use the split() method to break the string into words.
 sentence=input("Enter a sentence: ")
 words=sentence.split()
 word_count=len(words)
-print("The number of words in the sentence is:word_count")
+print("The number of words in the sentence is:",word_count)
 
 """
 5.Write a Python program to replace all occurrences of "is" with "was" in the string "This is a string and it
@@ -54,4 +54,4 @@ is an example." Print the modified string.
 """
 text="This is a string and it is an example."
 modified_string=text.replace("is","was")
-print("Modified string:modified string")
+print("Modified string:",modified string)
