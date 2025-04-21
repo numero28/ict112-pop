@@ -1,4 +1,17 @@
-"""
+"""text = "Programming"
+reversed_text = text[::-1]
+print("Reversed string:", reversed_text)
+full_name = input("Enter your full name: ")
+initials = '.'.join([name[0].upper() for name in full_name.split()]) + '.'
+print("Initials:", initials)
+ext = input("Enter a string to check if it's a palindrome: ")
+if text == text[::-1]:
+    print("It's a palindrome.")
+else:entence = input("Enter a sentence: ")
+words = sentence.split()
+print("Number of words:", len(word
+    print("It's not a palindrome.")
+
 Solutions to assignment 3
 """
 
@@ -6,7 +19,9 @@ Solutions to assignment 3
 1.Write a Python program to reverse the string "Programming". Print the reversed string.
 Hint: Use string slicing or a loop.
 """
-
+original_text = "This is a string and it is an example."
+modified_text = original_text.replace("is", "was")
+print("Modified string:", modified_text)
 
 
 """
