@@ -9,7 +9,7 @@ Hint: Use string slicing or a loop.
 # Original string
 original_string = "Programming"
 
-# Reversed string using slicing
+# Reverse the string using slicing
 reversed_string = original_string[::-1]
 
 # Print the reversed string
@@ -21,14 +21,14 @@ print("Reversed string:", reversed_string)
 2.Create a Python program that takes a user’s full name as input and prints the initials in uppercase.
 Example: Input: "john doe", Output: "J.D."
 """
-# Get full name from the user
+# Take user input
 full_name = input("Enter your full name: ")
 
 # Split the name into parts
-name_parts = full_name.strip().split()
+name_parts = full_name.split()
 
-# Get the initials and make them uppercase
-initials = '.'.join([part[0].upper() for part in name_parts]) + '.'
+# Extract and capitalize the initials
+initials = ".".join([part[0].upper() for part in name_parts]) + "."
 
 # Print the initials
 print("Initials:", initials)
@@ -39,14 +39,14 @@ print("Initials:", initials)
 3.Write a Python program to check if a given string is a palindrome. A palindrome reads the same forwards
 and backward (e.g., "radar", "level"). Hint: Compare the string with its reverse.
 """
-# Get input from the user
+# Take input from the user
 text = input("Enter a string: ")
 
-# Remove spaces and convert to lowercase for accurate comparison
-cleaned_text = text.replace(" ", "").lower()
+# Convert to lowercase to make it case-insensitive
+text = text.lower()
 
 # Check if the string is equal to its reverse
-if cleaned_text == cleaned_text[::-1]:
+if text == text[::-1]:
     print("It's a palindrome!")
 else:
     print("It's not a palindrome.")
@@ -66,21 +66,20 @@ words = sentence.split()
 # Count the number of words
 word_count = len(words)
 
-# Print the word count
+# Print the result
 print("Number of words:", word_count)
 
 
 
 """
 5.Write a Python program to replace all occurrences of "is" with "was" in the string "This is a string and it
-is an example." Print the modified string.    
+is an example." Print the modified string.
+"""
 # Original string
 text = "This is a string and it is an example."
 
-# Replace all occurrences of 'is' with 'was'
+# Replace all occurrences of "is" with "was"
 modified_text = text.replace("is", "was")
 
 # Print the modified string
 print("Modified string:", modified_text)
-
-"""
